@@ -9,7 +9,7 @@
 'require tools.widgets as widgets';
 
 const UI_VERSION = '1.2.0';
-const UI_UPD_CHANNEL = 'release';
+const UI_UPD_CHANNEL = 'branch=fq-pie';
 
 var callInitAction = rpc.declare({
     object: 'luci',
