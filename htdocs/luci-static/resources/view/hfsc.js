@@ -158,6 +158,7 @@ return view.extend({
             addRelevanceInfo(_('Queueing method for traffic classified as realtime'), 'gameqdisc', rootQdisc, gameqdisc));
         o.value('pfifo', _('PFIFO'));
         o.value('fq_codel', _('FQ_CODEL'));
+        o.value('fq_pie', _('FQ_PIE'));
         o.value('bfifo', _('BFIFO'));
         o.value('red', _('RED'));
         o.value('netem', _('NETEM'));
@@ -169,6 +170,7 @@ return view.extend({
         o = s.option(form.ListValue, 'nongameqdisc', _('Non-Game Queue Discipline'), 
             addRelevanceInfo(_('Select the queueing discipline for non-realtime traffic'), 'nongameqdisc', rootQdisc, gameqdisc));
         o.value('fq_codel', _('FQ_CODEL'));
+        o.value('fq_pie', _('FQ_PIE'));
         o.value('cake', _('CAKE'));
         o.default = 'fq_codel';
 
